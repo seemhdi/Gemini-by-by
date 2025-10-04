@@ -1,0 +1,26 @@
+/**
+ * WooCommerce Custom Styles
+ *
+ * This file contains all the custom CSS for the WooCommerce integration.
+ * It will be loaded after the main theme stylesheet.
+ */
+
+/* Example: Style the "Add to Cart" button */
+/*
+.woocommerce #respond input#submit,
+.woocommerce a.button,
+.woocommerce button.button,
+.woocommerce input.button {
+    background-color: #0073aa;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.woocommerce #respond input#submit:hover,
+.woocommerce a.button:hover,
+.woocommerce button.button:hover,
+.woocommerce input.button:hover {
+    background-color: #005a87;
+}
+*/
