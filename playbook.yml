@@ -1,0 +1,8 @@
+# playbook.yml
+# This file is the deployment instruction for the Doprax platform.
+# It tells Doprax to use the docker-compose.yml file to set up the website.
+
+services:
+  - name: premiumgift-website
+    type: docker-compose
+    path: ./
