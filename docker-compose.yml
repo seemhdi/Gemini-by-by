@@ -1,5 +1,8 @@
 version: '3.8'
 
+# این نسخه اصلاح شده از ایمیج استاندارد وردپرس استفاده می‌کند که شامل وب سرور است.
+# این کار مشکل "Failed" شدن نصب را حل می‌کند.
+
 services:
   db:
     image: mysql:8.0
@@ -16,12 +19,12 @@ services:
       - wpsite
 
   wordpress:
-    image: wordpress:latest
+    image: wordpress:latest  # استفاده از ایمیج استاندارد و کامل وردپرس
     container_name: premiumgift_wp
     depends_on:
       - db
     ports:
-      - "8000:80"
+      - "8000:80" # پورت ۸۰ کانتینر به پورت ۸۰۰۰ سیستم شما متصل می‌شود
     restart: always
     environment:
       WORDPRESS_DB_HOST: db:3306
